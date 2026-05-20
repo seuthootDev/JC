@@ -344,7 +344,7 @@ def main() -> int:
     load_env_file(SCRIPT_DIR / ".env")
 
     args = parse_args()
-    api_key = "AIzaSyDnJsY_xJpHpEgYFJgSkWsKg7zV_JDrzps"
+    api_key = ""
     if not args.dry_run and not api_key:
         print(
             "GEMINI_API_KEY 환경 변수 또는 --api-key 필요\n"
